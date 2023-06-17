@@ -1,0 +1,186 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+body {
+  background-color: rgb(246, 248, 250);
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    background-color: rgb(246, 248, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 9em 0 15em;
+    padding: 4rem;
+    gap: 4rem;
+  }
+  .btn-container {
+    display: flex;
+    gap: 0.7rem;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 5.2rem;
+    left: 9.5rem;
+    cursor: pointer;
+  }
+  .btn-container :hover {
+    color: green;
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 3px solid green;
+    cursor: pointer;
+  }
+
+  .job-btn {
+    padding: 6px;
+    width: 100%;
+    background-color: rgb(246, 248, 250);
+    font-size: 12px;
+    border: hidden;
+  }
+
+  .active-btn {
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    border-left: 3px solid green;
+    color: green;
+  }
+  .title {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .company {
+    margin-top: 0.8rem;
+    background-color: rgb(215, 215, 231);
+    width: 10%;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 2px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .job-date {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    margin-top: 0.8rem;
+  }
+  .job-desc {
+    display: flex;
+    gap: 1.3rem;
+    margin-top: 0.5rem;
+  }
+  .job-icon {
+    font-size: 0.8rem;
+    color: green;
+    margin-top: 0.7rem;
+  }
+  .job-duty {
+    margin-top: 0.4rem;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(80, 79, 79);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    background-color: rgb(246, 248, 250);
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0.7em 0 0.7em;
+    padding: 4rem;
+    gap: 2rem;
+  }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0em 0 2rem 0;
+    cursor: pointer;
+    gap: 0.2rem;
+  }
+  .btn-container :hover {
+    color: green;
+    width: 15%;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+  }
+  .job-btn {
+    padding: 3px;
+    background-color: rgb(246, 248, 250);
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    border: hidden;
+  }
+
+  .active-btn {
+    display: block;
+    border-bottom: 2px solid green;
+    width: 15%;
+    color: green;
+  }
+  .title {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .company {
+    margin: 0.5rem 0 0.5rem 0;
+    background-color: rgb(215, 215, 231);
+    width: 15%;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 2px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .job-date {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-top: 0.8rem;
+  }
+  .job-desc {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .job-icon {
+    font-size: 20px;
+    color: green;
+    margin-top: 0.7rem;
+  }
+  .job-duty {
+    margin-top: 0.4rem;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(80, 79, 79);
+  }
+}
